@@ -34,14 +34,14 @@ model Doctor {
     name                String
     email               String   @unique
     profilePhoto        String?
-    contactNumber       String
-    address             String
-    registrationNumber  String
+    contactNumber       String?
+    address             String?
+    registrationNumber  String?
     experience          Int      @default(0)
-    grnder              Gender
-    appoinmentFee       Int
-    qualification       String
-    currentWorkingPlace String
+    grnder              Gender?
+    appoinmentFee       Int?
+    qualification       String?
+    currentWorkingPlace String?
     isDeleted           Boolean  @default(false)
     createdAt           DateTime @default(now())
     updatedAt           DateTime @updatedAt
